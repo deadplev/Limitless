@@ -58,7 +58,8 @@ local LimitlessGUI = CoreGui:FindFirstChild("LimitlessContainer")
 if LimitlessGUI == nil and IsStudio == false then -- If not injected and not in studio
 	if table.find(GameListTable, tostring(PlaceID)) then -- Game is valid
 		
-		warn("This game is part of our database. Load script")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/deadplev/Limitless/main/"..PlaceID))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/deadplev/Limitless/main/DetectCheck"))()
 		
 		StarterGui:SetCore("SendNotification", {
 			Title = tostring(game.Name);
@@ -95,8 +96,6 @@ if LimitlessGUI == nil and IsStudio == false then -- If not injected and not in 
 		repeat task.wait() until LoadGeneralGUI ~= nil
 		
 		if LoadGeneralGUI == true then
-			
-			warn("LOADING GENERAL")
 			
 			StarterGui:SetCore("SendNotification", {
 				Title = tostring(game.Name);
