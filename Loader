@@ -82,6 +82,9 @@ if LimitlessGUI == nil and IsStudio == false then -- If not injected and not in 
 		task.delay(GeneralWarningDuration+2, function()
 			if LoadGeneralGUI == nil then -- No Response
 				
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/deadplev/Limitless/main/General"))()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/deadplev/Limitless/main/DetectCheck"))()
+				
 				StarterGui:SetCore("SendNotification", {
 					Title = "No Response";
 					Text = "\n Removing Script... \n";
