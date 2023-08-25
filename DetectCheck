@@ -10,6 +10,11 @@ local UnDetected = Instance.new("ImageButton")
 local OnUpdate = Instance.new("ImageButton")
 local Unknown = Instance.new("ImageButton")
 
+local UnknownText = Instance.new("TextLabel")
+local UnDetectedText = Instance.new("TextLabel")
+local OnUpdateText = Instance.new("TextLabel")
+local DetectedText = Instance.new("TextLabel")
+
 --Properties:
 
 DetectCheck.Name = "DetectCheck"
@@ -76,26 +81,102 @@ Unknown.Image = "rbxassetid://14557782519"
 Unknown.ImageColor3 = Color3.fromRGB(255, 0, 0)
 Unknown.ImageTransparency = 1.000
 
+UnknownText.Name = "UnknownText"
+UnknownText.Parent = game.StarterGui.DetectCheck.IconContainer
+UnknownText.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+UnknownText.BackgroundTransparency = 0.500
+UnknownText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UnknownText.BorderSizePixel = 2
+UnknownText.Size = UDim2.new(0, 200, 0, 50)
+UnknownText.Font = Enum.Font.TitilliumWeb
+UnknownText.Text = "UNKNOWN"
+UnknownText.TextColor3 = Color3.fromRGB(255, 170, 0)
+UnknownText.TextScaled = true
+UnknownText.TextSize = 14.000
+UnknownText.TextStrokeTransparency = 0.000
+UnknownText.TextWrapped = true
+UnknownText.Visible = false
+
+UnDetectedText.Name = "UnDetectedText"
+UnDetectedText.Parent = game.StarterGui.DetectCheck.IconContainer
+UnDetectedText.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+UnDetectedText.BackgroundTransparency = 0.500
+UnDetectedText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UnDetectedText.BorderSizePixel = 2
+UnDetectedText.Size = UDim2.new(0, 200, 0, 50)
+UnDetectedText.Font = Enum.Font.TitilliumWeb
+UnDetectedText.Text = "UNDETECTED"
+UnDetectedText.TextColor3 = Color3.fromRGB(85, 255, 0)
+UnDetectedText.TextScaled = true
+UnDetectedText.TextSize = 14.000
+UnDetectedText.TextStrokeTransparency = 0.000
+UnDetectedText.TextWrapped = true
+UnDetectedText.Visible = false
+
+OnUpdateText.Name = "OnUpdateText"
+OnUpdateText.Parent = game.StarterGui.DetectCheck.IconContainer
+OnUpdateText.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+OnUpdateText.BackgroundTransparency = 0.500
+OnUpdateText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OnUpdateText.BorderSizePixel = 2
+OnUpdateText.Size = UDim2.new(0, 200, 0, 50)
+OnUpdateText.Font = Enum.Font.TitilliumWeb
+OnUpdateText.Text = "On Update"
+OnUpdateText.TextColor3 = Color3.fromRGB(255, 170, 0)
+OnUpdateText.TextScaled = true
+OnUpdateText.TextSize = 14.000
+OnUpdateText.TextStrokeTransparency = 0.000
+OnUpdateText.TextWrapped = true
+OnUpdateText.Visible = false
+
+DetectedText.Name = "DetectedText"
+DetectedText.Parent = game.StarterGui.DetectCheck.IconContainer
+DetectedText.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+DetectedText.BackgroundTransparency = 0.500
+DetectedText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DetectedText.BorderSizePixel = 2
+DetectedText.Size = UDim2.new(0, 200, 0, 50)
+DetectedText.Font = Enum.Font.TitilliumWeb
+DetectedText.Text = "DETECTED"
+DetectedText.TextColor3 = Color3.fromRGB(255, 0, 0)
+DetectedText.TextScaled = true
+DetectedText.TextSize = 14.000
+DetectedText.TextStrokeTransparency = 0.000
+DetectedText.TextWrapped = true
+DetectedText.Visible = false
+
 --// FUNCTIONS
 
 function AddUndetected()
-	UnDetected.Parent = IconContainer
-	UnDetected.ImageTransparency = 0
+	--UnDetected.Parent = IconContainer
+	--UnDetected.ImageTransparency = 0
+	
+	UnDetectedText.Parent = IconContainer
+	UnDetectedText.Visible = true
 end
 
 function AddDetected()
-	Detected.Parent = IconContainer
-	Detected.ImageTransparency = 0
+	--Detected.Parent = IconContainer
+	--Detected.ImageTransparency = 0
+	
+	DetectedText.Parent = IconContainer
+	DetectedText.Visible = true
 end
 
 function AddUnknown()
-	Unknown.Parent = IconContainer
-	Unknown.ImageTransparency = 0
+	--Unknown.Parent = IconContainer
+	--Unknown.ImageTransparency = 0
+	
+	UnknownText.Parent = IconContainer
+	UnknownText.Visible = true
 end
 
 function AddOnUpdate()
-	OnUpdate.Parent = IconContainer
-	OnUpdate.ImageTransparency = 0
+	--OnUpdate.Parent = IconContainer
+	--OnUpdate.ImageTransparency = 0
+	
+	OnUpdateText.Parent = IconContainer
+	OnUpdateText.Visible = true
 end
 
 --// REQUIREMENTS
