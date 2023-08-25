@@ -191,6 +191,40 @@ local GameListTable = {
 	"" -- This game
 }
 
+--// HOVER DISPLAY
+
+UnDetectedText.MouseEnter:Connect(function()
+	UnDetectedText.Text = "There are no reports of bans on this game in this script's current version"
+end)
+
+UnDetectedText.MouseLeave:Connect(function()
+	UnDetectedText.Text = "UNDETECTED"
+end)
+
+DetectedText.MouseEnter:Connect(function()
+	DetectedText.Text = "There are reports of bans on this game in this script's current version. Use with extreme caution"
+end)
+
+DetectedText.MouseLeave:Connect(function()
+	DetectedText.Text = "DETECTED"
+end)
+
+UnknownText.MouseEnter:Connect(function()
+	UnknownText.Text = "We are unsure if this game is detected or not. Use with caution"
+end)
+
+UnknownText.MouseLeave:Connect(function()
+	UnknownText.Text = "UNKNOWN"
+end)
+
+OnUpdateText.MouseEnter:Connect(function()
+	OnUpdateText.Text = "This game's script is being updated"
+end)
+
+OnUpdateText.MouseLeave:Connect(function()
+	OnUpdateText.Text = "On Update"
+end)
+
 --// DETECTION
 
 if table.find(GameListTable, PlaceID) then -- Valid Game
