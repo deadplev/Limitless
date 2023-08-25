@@ -32,7 +32,7 @@ IconContainer.Size = UDim2.new(0.208333328, 0, 0.185185179, 0)
 UIGridLayout.Parent = IconContainer
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout.CellPadding = UDim2.new(0, 0, 0, 0)
-UIGridLayout.CellSize = UDim2.new(0.5, 0, 1, 0)
+UIGridLayout.CellSize = UDim2.new(0.5, 0, 0.3, 0)
 
 Detected.Name = "Detected"
 Detected.Parent = DetectCheck
@@ -126,6 +126,7 @@ OnUpdateText.Font = Enum.Font.TitilliumWeb
 OnUpdateText.Text = "On Update"
 OnUpdateText.TextColor3 = Color3.fromRGB(255, 170, 0)
 OnUpdateText.TextScaled = true
+OnUpdateText.TextSize = 30
 OnUpdateText.TextSize = 14.000
 OnUpdateText.TextStrokeTransparency = 0.000
 OnUpdateText.TextWrapped = true
