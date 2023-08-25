@@ -64,7 +64,6 @@ if LimitlessGUI == nil and IsStudio == false then -- If not injected and not in 
 		StarterGui:SetCore("SendNotification", {
 			Title = tostring(game.Name);
 			Text = "\n Loading Script GUI... \n";
-			Callback = Bindable;
 			Duration = InjectionNoticeDuration;
 		})
 		
@@ -82,13 +81,9 @@ if LimitlessGUI == nil and IsStudio == false then -- If not injected and not in 
 		task.delay(GeneralWarningDuration+2, function()
 			if LoadGeneralGUI == nil then -- No Response
 				
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/deadplev/Limitless/main/General"))()
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/deadplev/Limitless/main/DetectCheck"))()
-				
 				StarterGui:SetCore("SendNotification", {
 					Title = "No Response";
 					Text = "\n Removing Script... \n";
-					Callback = Bindable;
 					Duration = 5;
 				})
 				
@@ -100,10 +95,12 @@ if LimitlessGUI == nil and IsStudio == false then -- If not injected and not in 
 		
 		if LoadGeneralGUI == true then
 			
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/deadplev/Limitless/main/General"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/deadplev/Limitless/main/DetectCheck"))()
+			
 			StarterGui:SetCore("SendNotification", {
 				Title = tostring(game.Name);
 				Text = "\n Loading General Script GUI... \n";
-				Callback = Bindable;
 				Duration = InjectionNoticeDuration;
 			})
 			
@@ -111,7 +108,6 @@ if LimitlessGUI == nil and IsStudio == false then -- If not injected and not in 
 			StarterGui:SetCore("SendNotification", {
 				Title = "Notice:";
 				Text = "\n Removing Script... \n";
-				Callback = Bindable;
 				Duration = 5;
 			})
 			script:Destroy() -- Script Removed
