@@ -82,7 +82,7 @@ Unknown.ImageColor3 = Color3.fromRGB(255, 0, 0)
 Unknown.ImageTransparency = 1.000
 
 UnknownText.Name = "UnknownText"
-UnknownText.Parent = game.StarterGui.DetectCheck.IconContainer
+UnknownText.Parent = DetectCheck
 UnknownText.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
 UnknownText.BackgroundTransparency = 0.500
 UnknownText.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -98,7 +98,7 @@ UnknownText.TextWrapped = true
 UnknownText.Visible = false
 
 UnDetectedText.Name = "UnDetectedText"
-UnDetectedText.Parent = game.StarterGui.DetectCheck.IconContainer
+UnDetectedText.Parent = DetectCheck
 UnDetectedText.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
 UnDetectedText.BackgroundTransparency = 0.500
 UnDetectedText.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -114,7 +114,7 @@ UnDetectedText.TextWrapped = true
 UnDetectedText.Visible = false
 
 OnUpdateText.Name = "OnUpdateText"
-OnUpdateText.Parent = game.StarterGui.DetectCheck.IconContainer
+OnUpdateText.Parent = DetectCheck
 OnUpdateText.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
 OnUpdateText.BackgroundTransparency = 0.500
 OnUpdateText.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -130,7 +130,7 @@ OnUpdateText.TextWrapped = true
 OnUpdateText.Visible = false
 
 DetectedText.Name = "DetectedText"
-DetectedText.Parent = game.StarterGui.DetectCheck.IconContainer
+DetectedText.Parent = DetectCheck
 DetectedText.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
 DetectedText.BackgroundTransparency = 0.500
 DetectedText.BorderColor3 = Color3.fromRGB(0, 0, 0)
