@@ -18,7 +18,7 @@ local DetectedText = Instance.new("TextLabel")
 --Properties:
 
 DetectCheck.Name = "DetectCheck"
-DetectCheck.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DetectCheck.Parent = game.CoreGui
 DetectCheck.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 IconContainer.Name = "IconContainer"
